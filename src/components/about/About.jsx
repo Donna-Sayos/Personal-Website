@@ -7,7 +7,7 @@ import { TbCertificate } from "react-icons/tb";
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
+      <h5 className="sub">Get To Know</h5>
       <h2>About Me</h2>
 
       <div className="container about_container">
@@ -33,11 +33,11 @@ const About = () => {
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sint eaque ab repellendus iure molestiae placeat nulla veniam saepe! Soluta molestiae, numquam mollitia officia dolorum vel quo ex quod ab!
+            I was born and raised in the Philippines. I am a full-stack web developer currently based in New York. I am a versatile, empathetic, organized, and driven striving to break into the tech industry. I have a curious mind. Always keen and ready to learn new things. The desire to learn culminated into my attendance in a Software Engineering Immersive Bootcamp called the Grace Hopper Program at Full Stack Academy. 
           </p>
 
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
-        </div>
+          <a href="#contact" className="button btn btn-primary">Let's Talk</a>
+        </div> 
       </div>
     </section>
   )

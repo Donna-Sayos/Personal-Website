@@ -20,6 +20,8 @@
 }
 
 .about_me_img {
+    width: 100%;
+    aspect-ratio: 1/1.8;
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(25deg);
@@ -34,14 +36,14 @@
 .about_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10rem;
+    gap: 14rem;
 }
 
 .about_card {
     background: var(--color-bg-2);
     border: 1px solid transparent;
     width: 20rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
@@ -63,6 +65,12 @@
 }
 
 .about_content p {
+    font-size: 1.25rem;
     margin: 2rem 0 2.6rem;
     color: #999632;
+}
+
+.sub {
+    font-size: 1rem;
+    color: #69660E;
 }
