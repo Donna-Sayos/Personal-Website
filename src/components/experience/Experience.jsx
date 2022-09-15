@@ -30,7 +30,11 @@ const Experience = () => {
             </article>
             <article className="experience_details">
               <IoCheckmarkDoneCircle className="check_icon" size={25}/>
-              <h3>Git / Github</h3>
+              <h3>Git</h3>
+            </article>
+            <article className="experience_details">
+              <IoCheckmarkDoneCircle className="check_icon" size={25}/>
+              <h3>Github</h3>
             </article>
             <article className="experience_details">
               <IoCheckmarkDoneCircle className="check_icon" size={25}/>
@@ -60,6 +64,10 @@ const Experience = () => {
               <IoCheckmarkDoneCircle className="check_icon" size={25}/>
               <h3>Expo</h3>
             </article>
+            <article className="experience_details">
+                  <IoCheckmarkDoneCircle className="check_icon" size={25}/>
+                  <h3>RESTful APIs</h3>
+              </article>
           </div>
         </div>
 
@@ -69,10 +77,6 @@ const Experience = () => {
               <article className="experience_details">
                   <IoCheckmarkCircle className="check_icon" size={25}/>
                   <h3>Firebase</h3>
-              </article>
-              <article className="experience_details">
-                  <IoCheckmarkCircle className="check_icon" size={25}/>
-                  <h3>RESTful APIs</h3>
               </article>
               <article className="experience_details">
                   <IoCheckmarkCircle className="check_icon" size={25}/>
@@ -92,19 +96,35 @@ const Experience = () => {
               </article>
               <article className="experience_details">
                   <IoCheckmarkCircle className="check_icon" size={25}/>
+                  <h3>Puppeteer</h3>
+              </article>
+              <article className="experience_details">
+                  <IoCheckmarkCircle className="check_icon" size={25}/>
+                  <h3>Nightmare</h3>
+              </article>
+              <article className="experience_details">
+                  <IoCheckmarkCircle className="check_icon" size={25}/>
+                  <h3>Nodemailer</h3>
+              </article>
+              <article className="experience_details">
+                  <IoCheckmarkCircle className="check_icon" size={25}/>
+                  <h3>Emailjs</h3>
+              </article>
+              <article className="experience_details">
+                  <IoCheckmarkCircle className="check_icon" size={25}/>
                   <h3>Webpack</h3>
               </article>
               <article className="experience_details">
-                  <IoCheckmarkCircle className="check_icon" size={40}/>
-                  <h3>Puppeteer / Nightmare</h3>
+                  <IoCheckmarkCircle className="check_icon" size={25}/>
+                  <h3>Jasmine</h3>
               </article>
               <article className="experience_details">
-                  <IoCheckmarkCircle className="check_icon" size={40}/>
-                  <h3>Chai / Jasmine / Mocha</h3>
+                  <IoCheckmarkCircle className="check_icon" size={25}/>
+                  <h3>Mocha</h3>
               </article>
               <article className="experience_details">
-                  <IoCheckmarkCircle className="check_icon" size={55}/>
-                  <h3>Nodemailer / SendGrid / Emailjs</h3>
+                  <IoCheckmarkCircle className="check_icon" size={25}/>
+                  <h3>Chai</h3>
               </article>
             </div>
         </div>

@@ -20,15 +20,15 @@ const About = () => {
         <div className="about_content">
           <div className="about_cards">
             <article className="about_card">
-              <FaAward className="about_icon" size={30} color="#69660E"/>
-              <h3>Industry Experience</h3>
-              <small>1 year</small>
+              <FaAward className="about_icon" size={40} color="#69660E"/>
+              <h2>Industry Experience</h2>
+              <h3>1 year</h3>
             </article>
 
             <article className="about_card">
-              <TbCertificate className="about_icon" size={30} color="#69660E"/>
-              <h3>Software Engineer Certificate</h3>
-              <small>553 hours of Full-stack Web Development</small>
+              <TbCertificate className="about_icon" size={40} color="#69660E"/>
+              <h2>Software Engineer Certificate</h2>
+              <h3>553 hours of Full-stack Web Development</h3>
             </article>
           </div>
 
