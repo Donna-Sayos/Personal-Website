@@ -134,7 +134,7 @@ img {
     .container {
         width: var(--container-width-2);
         position: relative;
-        left: -2%;
+        left: -4%;
     }
 
     section {

@@ -103,6 +103,8 @@
     .about_me {
         width: 43%;
         margin: 2rem auto 4rem;
+        position: relative;
+        left: 5%;
     }
     .about_content p {
         margin: 1rem 0;
@@ -113,7 +115,7 @@
         line-height: 2rem;
         position: relative;
         top: 5%;
-        left: -3%;
+        left: -2%;
     }
     .about_cards {
         grid-template-columns: 1fr;
@@ -121,7 +123,7 @@
         place-items: center;
         position: relative;
         top: 5%;
-        left: 3%;
+        left: 4%;
     }
     .button {
         position: relative;
@@ -131,12 +133,10 @@
     .sub1 {
         position: relative;
         top: 5%;
-        left: -2%;
     }
     .sub1_ {
         position: relative;
         top: 5%;
-        left: -2%;
     }
 }
 /* For mobile phones -- about */
