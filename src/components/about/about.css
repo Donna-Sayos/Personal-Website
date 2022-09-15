@@ -37,15 +37,21 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
+    position: relative;
+    top: 25%;
 }
 
 .sub1 {
     color: #69660E;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    position: relative;
+    top: 10%;
 }
 
 .sub1_ {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    position: relative;
+    top: 10%;
 }
 
 .about_card {
@@ -77,6 +83,15 @@
     font-size: 1.25rem;
     margin: 2rem 0 2.6rem;
     color: #999632;
+    position: relative;
+    top: 35%;
+    width: 120%;
+    line-height: 3rem;
+}
+
+.button {
+    position: relative;
+    top: 45%;
 }
 
 /* For tablets -- about */
@@ -95,16 +110,22 @@
         text-align: center;
         padding: 2rem;
         width: 110%;
+        line-height: 2rem;
         position: relative;
-        left: -6%;
+        top: 5%;
+        left: -3%;
     }
     .about_cards {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         place-items: center;
+        position: relative;
+        top: 5%;
+        left: 3%;
     }
     .button {
         position: relative;
+        top: 2%;
         left: 45%;
     }
     .sub1 {
@@ -134,6 +155,7 @@
         gap: 1.5rem;
         place-items: center;
         position: relative;
+        top: -2%;
         left: -4%;
     }
     .about_card {
@@ -158,13 +180,14 @@
         padding: 2rem;
         width: 145%;
         position: relative;
-        top: -3%;
+        top: -5%;
         left: -29%;
+        line-height: 2rem;
     }
     .button {
         position: relative;
-        left: -8%;
-        top: -6%;
+        left: -6%;
+        top: -8%;
     }
     .sub1 {
         position: relative;
