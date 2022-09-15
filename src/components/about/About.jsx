@@ -7,8 +7,8 @@ import { TbCertificate } from "react-icons/tb";
 const About = () => {
   return (
     <section id="about">
-      <h5 className="sub">Get To Know</h5>
-      <h2>About Me</h2>
+      <h5 className="sub1">Get To Know</h5>
+      <h2 className="sub1_">About Me</h2>
 
       <div className="container about_container">
         <div className="about_me">

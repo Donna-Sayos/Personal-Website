@@ -32,3 +32,29 @@ nav a.active {
     background: rgba(0, 0, 0, 0.3);
     color: var(--color-white);
 }
+
+/* For tablets -- nav */
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 0.4rem 1.2rem;
+        gap: 0rem;
+        position: fixed;
+        left: 50%;
+    }
+}
+/* For mobile phones -- nav */
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 0.4rem 0.5rem;
+        bottom: 0.5rem;
+        gap: 0rem;
+        position: fixed;
+        left: 49%;
+    }
+    nav a {
+        font-size: 1.5rem;
+    }
+    nav a.active {
+        font-size: 1.5rem;
+    }
+}
