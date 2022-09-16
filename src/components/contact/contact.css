@@ -96,12 +96,16 @@ input, textarea {
         flex-direction: row;
         position: relative;
         left: 18%;
-        top: -18%;
+        top: -40%;
     }
     form {
         position: relative;
-        top: -15%;
+        top: -25%;
         left: 18%;
+        gap: 0.5rem;
+    }
+    .contact_top {
+        top: 2%;
     }
 }
 /* For mobile phones */
@@ -120,7 +124,7 @@ input, textarea {
     }
     form {
         left: 28.5%;
-        top: 325%;
+        top: 345%;
     }
     .container.contact_container {
         width: var(--container-width-1);

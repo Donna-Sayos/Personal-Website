@@ -1,14 +1,33 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./contact.css"; 
 import { MdEmail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const [message, setMessage] = useState(false);
+  const formRef = useRef();
+
+  const handleSubmit = (e) => {
+    setMessage(true);
+    e.preventDefault();
+
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, formRef.current, process.env.REACT_APP_PUBLIC_KEY)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+  };
+
   return (
     <section id="contact">
       <div className="contact_top">
         <h3 className="sub5">Get In Touch</h3>
         <h2 className="sub5_">Contact Me. Don't be shy 😊</h2>
+        <medium>(Please provide a valid email)</medium>
       </div>
 
       <div className="container contact_container">
@@ -27,12 +46,13 @@ const Contact = () => {
           </article>
         </div>
 
-        {/* message form */}
-        <form action="">
+        {/* message formRef */}
+        <form ref={formRef} onSubmit={handleSubmit}>
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" rows={12} placeholder="Your Message" required></textarea>
           <button type="submit" className="btn btn-primary">Send</button>
+          {message && <h2>Thanks, I'll reply as soon as I can 😁</h2>}
         </form>
       </div>
     </section>
