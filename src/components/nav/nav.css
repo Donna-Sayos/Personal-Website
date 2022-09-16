@@ -44,7 +44,7 @@ nav a.active {
 }
 /* For mobile phones -- nav */
 @media screen and (max-width: 600px) {
-    nav {
+    /* nav {
         padding: 0.4rem 0.5rem;
         bottom: 0.5rem;
         gap: 0rem;
@@ -56,5 +56,8 @@ nav a.active {
     }
     nav a.active {
         font-size: 1.5rem;
+    } */
+    nav {
+        display: none;
     }
 }

@@ -7,15 +7,16 @@
 }
 
 .experience_container > div {
-    background: var(--color-bg-2);
+    background: var(--color-gradient);
     padding: 2.4rem 5rem 1rem;
     border-radius: 2rem;
     border: 1px solid transparent;
+    transition: var(--transition);
 }
 
 .experience_container > div:hover {
-    background: rgba(232, 217, 168, 0.4);
-    border-color: var(--color-bg-2);
+    background: var(--color-gradient-2);
+    border-color: var(--color-gradient-2);
     cursor: default;
 }
 
@@ -66,15 +67,16 @@
         padding: 2rem;
         margin: 0 auto;
         position: relative;
-        left: 4%;
+        top: -32%;
+        left: 5%;
     }
     .sub2 {
         position: relative;
-        top: 28%;
+        top: 18%;
     }
     .sub2_ {
         position: relative;
-        top: 27%;
+        top: 17%;
     }
 }
 /* For mobile phones */
@@ -82,23 +84,24 @@
     .experience_container {
         grid-template-columns: 1fr;
         position: relative;
-        top: 48%;
+        top: 39%;
+        gap: 0;
     }
     .experience_container > div {
         width: 114%;
-        padding: 1.5rem;
+        padding: 0.6rem;
         margin: 0 auto;
         position: relative;
-        left: -2%;
+        left: 3%;
     }
     .sub2 {
         position: relative;
-        top: 51%;
+        top: 31%;
         left: 3%;
     }
     .sub2_ {
         position: relative;
-        top: 50%;
+        top: 28%;
         left: 3%;
     }
 }

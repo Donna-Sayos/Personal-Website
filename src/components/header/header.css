@@ -38,7 +38,7 @@ header {
     background: linear-gradient(var(--color-primary-2), transparent);
     width: 40rem;
     height: 50rem;
-    position: absolute;
+    position: relative;
     left: calc(50% - 20rem);
     margin-top: 4rem;
     border-radius: 18rem 18rem 0 0;
@@ -50,7 +50,7 @@ header {
 
 /* scroll arrow */
 .scroll_down {
-    position: absolute;
+    position: relative;
     right: -2.3rem;
     bottom: 5rem;
 }
@@ -67,7 +67,7 @@ header {
         width: 25rem;
         height: 30rem;
         position: relative;
-        left: calc(50% - 12rem);
+        left: calc(50% - 11rem);
     }
 }
 /* For mobile phones -- header */
@@ -91,7 +91,7 @@ header {
     .me {
         width: 22rem;
         height: 30rem;
-        position: absolute;
+        position: relative;
         left: calc(50% - 9.2rem);
     }
     .greet {

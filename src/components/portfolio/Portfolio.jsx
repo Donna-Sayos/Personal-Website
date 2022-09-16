@@ -12,8 +12,8 @@ const Portfolio = () => {
 
       <div className="container portfolio_container">
         {
-          PROJECTS.map(({ id, image, title, description, skills, github, demo }) => (
-            <article key={id} className="portfolio_item">
+          PROJECTS.map(({ image, title, description, skills, github, demo }, index) => (
+            <article key={index} className="portfolio_item">
               <div className="item_img">
                 <img src={image} alt={title}/>
               </div>

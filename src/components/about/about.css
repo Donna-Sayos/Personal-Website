@@ -12,7 +12,7 @@
     background: linear-gradient(
         45deg,
         transparent,
-        var(--color-primary),
+        #C2B061,
         transparent
     );
     display: grid;
@@ -55,7 +55,7 @@
 }
 
 .about_card {
-    background: var(--color-bg-2);
+    background: var(--color-gradient);
     border: 1px solid transparent;
     width: 25rem;
     height: 14rem;
@@ -66,8 +66,8 @@
 }
 
 .about_card:hover {
-    background: rgba(232, 217, 168, 0.4);
-    border-color: var(--color-bg-2);
+    background: var(--color-gradient-2);
+    border-color: var(--color-gradient-2);
     cursor: default;
 }
 
@@ -85,7 +85,7 @@
     color: #999632;
     position: relative;
     top: 35%;
-    width: 120%;
+    width: 110%;
     line-height: 3rem;
 }
 
@@ -104,6 +104,7 @@
         width: 43%;
         margin: 2rem auto 4rem;
         position: relative;
+        top: -15%;
         left: 5%;
     }
     .about_content p {
@@ -114,7 +115,7 @@
         width: 110%;
         line-height: 2rem;
         position: relative;
-        top: 5%;
+        top: -6%;
         left: -2%;
     }
     .about_cards {
@@ -122,21 +123,21 @@
         gap: 1.5rem;
         place-items: center;
         position: relative;
-        top: 5%;
+        top: -5%;
         left: 4%;
     }
     .button {
         position: relative;
-        top: 2%;
+        top: -9%;
         left: 45%;
     }
     .sub1 {
         position: relative;
-        top: 5%;
+        top: 2%;
     }
     .sub1_ {
         position: relative;
-        top: 5%;
+        top: 2%;
     }
 }
 /* For mobile phones -- about */
@@ -152,17 +153,17 @@
     }
     .about_cards {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1rem;
         place-items: center;
         position: relative;
-        top: -2%;
+        top: -10%;
         left: -4%;
     }
     .about_card {
         width: 20rem;
-        height: 14rem;
+        height: 11rem;
         border-radius: 2rem;
-        padding: 1.8rem;
+        padding: 0.8rem;
     }
     .about_card h2 {
         font-size: 1.3rem;
@@ -180,23 +181,23 @@
         padding: 2rem;
         width: 145%;
         position: relative;
-        top: -5%;
+        top: -14%;
         left: -29%;
         line-height: 2rem;
     }
     .button {
         position: relative;
         left: -6%;
-        top: -8%;
+        top: -18%;
     }
     .sub1 {
         position: relative;
-        top: 5%;
-        left: 2%;
+        top: 1%;
+        left: 4%;
     }
     .sub1_ {
         position: relative;
-        top: 5%;
-        left: 2%;
+        top: -1%;
+        left: 4%;
     }
 }

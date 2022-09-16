@@ -1,9 +1,11 @@
 .container.testimonials_container {
     width: 45%;
+    position: relative;
+    top: 5%;
 }
 
 .peer_img {
-    width: 12rem;
+    width: 15rem;
     aspect-ratio: 1/1;
     overflow: hidden;
     border-radius: 50%;
@@ -20,7 +22,7 @@
 
 .testimonial {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 2rem;
     user-select: none;
 }
@@ -43,6 +45,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    top: 5%;
 }
 
 /* For tablets */
@@ -63,9 +67,20 @@
 @media screen and (max-width: 600px) {
     .container.testimonials_container {
         width: var(--container-width-1);
+        position: relative;
+        top: 214%;
+    }
+    .testimonial h2 {
+        font-size: 1.8rem;
+    }
+    .testimonial p {
+        line-height: 1.6rem;
+        font-size: 1.4rem;
+        padding: 1rem;
     }
     .top {
         position: relative;
-        top: 272%;
+        top: 216%;
+        line-height: 40px;
     }
 }
