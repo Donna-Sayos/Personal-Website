@@ -1,22 +1,25 @@
 .experience_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 2rem;
     position: relative;
     top: 8%;
 }
 
 .experience_container > div {
-    background: var(--color-gradient);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
     padding: 2.4rem 5rem 1rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
     transition: var(--transition);
 }
 
 .experience_container > div:hover {
-    background: var(--color-gradient-2);
-    border-color: var(--color-gradient-2);
+    transform: scale(1.1);
     cursor: default;
 }
 
@@ -85,7 +88,7 @@
         grid-template-columns: 1fr;
         position: relative;
         top: 39%;
-        gap: 0;
+        gap: 10px;
     }
     .experience_container > div {
         width: 114%;
@@ -93,6 +96,7 @@
         margin: 0 auto;
         position: relative;
         left: 3%;
+        backdrop-filter: blur(0px);
     }
     .sub2 {
         position: relative;

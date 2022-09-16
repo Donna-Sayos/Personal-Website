@@ -1,0 +1,130 @@
+.container.contact_container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 40% 80%;
+    gap: 12%;
+    position: relative;
+    top: 10%;
+    left: -10%;
+}
+
+.contact_options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact_option {
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    transition: var(--transition);
+    padding-bottom: 1.5rem;
+
+    box-sizing: border-box; 
+    width: 100%;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    flex-direction: column;
+}
+
+.contact_option:hover {
+    transform: translateY(-50px);
+    transform: translate(-20px, -40px) rotate(-10deg) scale(1.4);
+}
+
+.contact_option a {
+    margin-top: 0.7rem;
+}
+
+.sub5 {
+    color: #69660E;
+    font-size: 1.5rem;
+}
+
+.sub5_ {
+    font-size: 3.5rem;
+    color: var(--color-primary);
+}
+
+.contact_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 5%;
+}
+
+/* message form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+button {
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    border: 2px solid var(--color-primary-2);
+    resize: none;
+    color: var(--color-goldish);
+    font-size: 1.1rem;
+}
+
+/* For tablets */
+@media screen and (max-width: 1024px) {
+    .container.contact_container {
+        grid-template-columns: 1fr;
+    }
+    .contact_options {
+        flex-direction: row;
+        position: relative;
+        left: 18%;
+        top: -18%;
+    }
+    form {
+        position: relative;
+        top: -15%;
+        left: 18%;
+    }
+}
+/* For mobile phones */
+@media screen and (max-width: 600px) {
+    .sub5_ {
+        font-size: 2.5rem;
+    }
+    .contact_top {
+        top: 215%;
+        text-align: center;
+    }
+    .contact_options {
+        flex-direction: column;
+        left: 35.5%;
+        top: 410%;
+    }
+    form {
+        left: 28.5%;
+        top: 325%;
+    }
+    .container.contact_container {
+        width: var(--container-width-1);
+        position: relative;
+        left: -20%;
+    }
+}

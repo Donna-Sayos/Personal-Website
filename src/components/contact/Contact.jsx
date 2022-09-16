@@ -6,7 +6,7 @@ import { FiPhoneCall } from "react-icons/fi";
 const Contact = () => {
   return (
     <section id="contact">
-      <div className="top">
+      <div className="contact_top">
         <h3 className="sub5">Get In Touch</h3>
         <h2 className="sub5_">Contact Me. Don't be shy 😊</h2>
       </div>
@@ -14,16 +14,16 @@ const Contact = () => {
       <div className="container contact_container">
         <div className="contact_options">
           <article className="contact_option">
-            <MdEmail size={25} color="#D1D1D1" />
+            <MdEmail size={30} color="#FFB08F" />
             <h2>Email</h2>
             <h4>donnasayos@gmail.com</h4>
-            <a href="mailto:donnasayos@gmail.com" target="_blank" rel="noreferrer">Send a message</a>
+            <a href="mailto:donnasayos@gmail.com" target="_blank" rel="noreferrer" className="btn">Send a message</a>
           </article>
           <article className="contact_option">
-            <FiPhoneCall size={30} color="#BABABA" />
+            <FiPhoneCall size={30} color="#FFB08F" />
             <h2>Phonecall</h2>
-            <h4>(929) 256 - 8198</h4>
-            <a href="tel:+19292568198" target="_blank" rel="noreferrer">Call Me</a>
+            <h4>1 (929) 256 - 8198</h4>
+            <a href="tel:+19292568198" target="_blank" rel="noreferrer" className="btn">Call Me</a>
           </article>
         </div>
 

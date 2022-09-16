@@ -12,9 +12,14 @@
     background: linear-gradient(
         45deg,
         transparent,
-        #C2B061,
+        #D4C581,
         transparent
     );
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
     display: grid;
     place-items: center;
 }
@@ -55,8 +60,12 @@
 }
 
 .about_card {
-    background: var(--color-gradient);
-    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
     width: 25rem;
     height: 14rem;
     border-radius: 2rem;
@@ -66,8 +75,7 @@
 }
 
 .about_card:hover {
-    background: var(--color-gradient-2);
-    border-color: var(--color-gradient-2);
+    transform: scale(1.2);
     cursor: default;
 }
 
