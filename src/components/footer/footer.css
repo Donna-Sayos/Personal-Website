@@ -30,6 +30,8 @@ footer {
 .footer_copyright {
     display: flex;
     justify-content: center;
+    position: relative;
+    top: -100px;
 }
 
 .footer_socials {
@@ -61,37 +63,71 @@ footer {
     transform: translate(-20px, -40px) rotate(-10deg) scale(2.5);
 }
 
+/* for Macs */
+@media screen and (max-width: 2000px) {
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 1440px;
+        margin-top: 280px; 
+    }
+}
+
+/* For Small monitor */
+@media screen and (max-width: 1200px) {
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 1275px;
+        margin-top: 160px; 
+    }
+    .footer_socials {
+        margin-bottom: 1rem;
+        margin-top: -50px;
+    }
+    .footer_copyright {
+        top: 0%;
+    }
+}
+
 /* For tablets */
 @media screen and (max-width: 1024px) {
-  .permalinks {
-    gap: 2rem;
-    margin: 0 auto 1.5rem;
-  }
-  .name {
-    margin: 0;
-  }
+    .permalinks {
+        gap: 2rem;
+        margin: 0 auto 4rem;
+    }
+    .name {
+        margin: 0;
+    }
+    footer {
+        position: relative;
+        margin-top: -100px; 
+        width: 1250px;
+        height: 380px;
+    }
 }
 /* For mobile phones */
 @media screen and (max-width: 600px) {
    footer {
-    position: relative;
-    bottom: 0;
-    width: 450px;
-    margin-top: 2700px; 
+        position: relative;
+        bottom: 0;
+        width: 610px;
+        margin-top: 4250px; 
+        height: 250px;
    }
    .permalinks {
-    gap: 10px;
-    font-size: 1.3rem;
+        gap: 10px;
+        font-size: 1.8rem;
    }
    .name {
-    position: static;
-    font-size: 2.5rem;
+        position: static;
+        font-size: 2.8rem;
    }
    .footer_socials {
-    gap: 2rem;
-    margin-bottom: 1.5rem;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
    }
    .footer_socials a {
-    padding: 0.5rem;
+        padding: 0.5rem;
    }
 }

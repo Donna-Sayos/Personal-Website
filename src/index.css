@@ -22,8 +22,6 @@
     --color-gradient: linear-gradient(120deg, #FFE88C, #FFE0B8);
 
     --container-width-1: 85%;
-    --container-width-2: 70%; 
-    --container-width-3: 65%;
 
     --transition: all 400ms ease;
 }
@@ -128,12 +126,35 @@ img {
     object-fit: cover;
 }
 
-/* For tablets */
+@media screen and (max-width: 2000px) {
+    .container {
+        width: 85%;
+    }
+
+    section {
+        margin-top: 0rem;
+    }
+}
+
+/* For Small monitor */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 85%;
+        position: relative;
+        left: 2%;
+    }
+
+    section {
+        margin-top: 6rem;
+    }
+}
+
+/* For ipad pro */
 @media screen and (max-width: 1024px) {
     .container {
-        width: var(--container-width-2);
+        width: 75%;
         position: relative;
-        left: -4%;
+        left: 13%;
     }
 
     section {
@@ -143,9 +164,9 @@ img {
 /* For mobile phones */
 @media screen and (max-width: 600px) {
     .container {
-        width: var(--container-width-3);
+        width: 65%;
         position: relative;
-        left: -2.5%;
+        left: 1%;
     }
 
     section > h2 {

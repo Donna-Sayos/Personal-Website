@@ -46,17 +46,22 @@
     top: 25%;
 }
 
+.about_top {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   position: relative;
+   top: 2%;
+}
+
 .sub1 {
     color: #69660E;
     font-size: 1.5rem;
-    position: relative;
-    top: 10%;
 }
 
 .sub1_ {
     font-size: 3.5rem;
-    position: relative;
-    top: 10%;
 }
 
 .about_card {
@@ -102,6 +107,68 @@
     top: 45%;
 }
 
+/* for Macs */
+@media screen and (max-width: 2000px) {
+    .about_container {
+        gap: 0;
+    }
+    .about_cards {
+        gap: 2rem;
+        position: relative;
+        top: 4%;
+        left: -10%;
+    }
+    .about_content p {
+        width: 125%;
+        position: relative;
+        top: 2%;
+        left: -6%;
+    }
+    .button {
+        position: relative;
+        top: -6.5%;
+        left: 48%;
+        font-size: 16px;
+    }
+}
+
+/* For Small monitor */
+@media screen and (max-width: 1200px) {
+    .about_me {
+        width: 80%;
+        margin: 2rem auto 4rem;
+        position: relative;
+        top: 10%;
+        left: -20%;
+    }
+    .about_cards {
+        gap: 1rem;
+        position: relative;
+        top: 5%;
+        left: 10%;
+    }
+    .about_card {
+        position: relative;
+        left: -35%;
+        width: 22rem;
+        height: 16.5rem;
+    }
+    .about_content p {
+        width: 140%;
+        position: relative;
+        top: 5%;
+        left: -12%;
+    }
+    .button {
+        position: relative;
+        top: -2%;
+        left: 50%;
+    }
+    .about_top {
+        left: 5%;
+    }
+}
+
 /* For tablets -- about */
 @media screen and (max-width: 1024px) {
     .about_container {
@@ -109,43 +176,44 @@
         gap: 2.5rem;
     }
     .about_me {
-        width: 43%;
+        width: 48%;
         margin: 2rem auto 4rem;
         position: relative;
-        top: -15%;
-        left: 5%;
+        top: 2%;
+        left: -2%;
     }
     .about_content p {
         margin: 1rem 0;
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
         padding: 2rem;
         width: 110%;
-        line-height: 2rem;
+        line-height: 3rem;
         position: relative;
-        top: -6%;
-        left: -2%;
+        top: 0;
+        left: -8%;
     }
     .about_cards {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
         place-items: center;
         position: relative;
-        top: -5%;
-        left: 4%;
+        top: 3%;
+        left: 14%;
+        font-size: 20px;
+    }
+    .about_card {
+        height: 100%;
     }
     .button {
         position: relative;
-        top: -9%;
-        left: 45%;
+        top: -5%;
+        left: 40%;
+        font-size: 22px;
     }
-    .sub1 {
-        position: relative;
-        top: 2%;
-    }
-    .sub1_ {
-        position: relative;
-        top: 2%;
+    .about_top {
+        left: 10%;
+        top: 4%;
     }
 }
 /* For mobile phones -- about */
@@ -154,10 +222,11 @@
         gap: 3rem;
     }
     .about_me {
-        width: 65%;
+        width: 70%;
         margin: 0 auto 3rem;
         position: relative;
-        left: -5%;
+        left: 18%;
+        top: -22%;
     }
     .about_cards {
         grid-template-columns: 1fr;
@@ -165,7 +234,7 @@
         place-items: center;
         position: relative;
         top: -10%;
-        left: -4%;
+        left: 55%;
     }
     .about_card {
         width: 20rem;
@@ -185,27 +254,21 @@
     }
     .about_content p {
         margin: 1rem 0;
-        font-size: 18px;
+        font-size: 20px;
         padding: 2rem;
-        width: 145%;
+        width: 160%;
         position: relative;
-        top: -14%;
-        left: -29%;
+        top: -10%;
+        left: -11%;
         line-height: 2rem;
     }
     .button {
         position: relative;
-        left: -6%;
-        top: -18%;
+        left: 20%;
+        top: -14%;
     }
-    .sub1 {
-        position: relative;
-        top: 1%;
-        left: 4%;
-    }
-    .sub1_ {
-        position: relative;
-        top: -1%;
-        left: 4%;
+    .about_top {
+        left: 30%;
+        top: -8%;
     }
 }

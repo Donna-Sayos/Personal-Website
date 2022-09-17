@@ -89,27 +89,73 @@ input, textarea {
     font-size: 1.1rem;
 }
 
-/* For tablets */
-@media screen and (max-width: 1024px) {
+/* for Macs */
+@media screen and (max-width: 2000px) {
+    .contact_top {
+        top: 10%;
+    }
+    .container.contact_container {
+        top: 10%;
+    }
+    .contact_option {
+        height: 75%;
+    }
+    form {
+        position: relative;
+        top: -25%;
+        gap: 0.5rem;
+        height: 75%;
+    }
+}
+
+/* For Small monitor */
+@media screen and (max-width: 1200px) {
+    .contact_top {
+        top: 3%;
+        left: 3%;
+    }
     .container.contact_container {
         grid-template-columns: 1fr;
-        grid-template-rows: 30% 60%
+        grid-template-rows: 40% 60%
     }
     .contact_options {
         flex-direction: row;
         position: relative;
-        left: 8%;
-        top: -20%;
-        gap: 2rem;
+        left: 4%;
+        top: -15%;
+        gap: 6rem;
+    } 
+    form {
+        position: relative;
+        top: -40%;
+        left: 4%;
+        gap: 0.5rem;
+    }
+}
+
+/* For tablets */
+@media screen and (max-width: 1024px) {
+    .container.contact_container {
+        grid-template-columns: 1fr;
+        grid-template-columns: 130%;
+        grid-template-rows: 40% 70%
+    }
+    .contact_options {
+        position: relative;
+        left: -12%;
+        top: -35%;
+        font-size: 25px;
+        height: 130%;
     }   
     form {
         position: relative;
-        top: -20%;
-        left: 8%;
-        gap: 0.5rem;
+        top: -30%;
+        left: -13%;
+        height: 100%;
     }
     .contact_top {
-        top: 2%;
+        top: 0%;
+        left: 14%;
     }
 }
 /* For mobile phones */
@@ -118,19 +164,19 @@ input, textarea {
         font-size: 2.5rem;
     }
     .contact_top {
-        top: 260%;
-        left: 6%;
+        top: 425%;
+        left: 25%;
         text-align: center;
     }
     .contact_options {
         flex-direction: column;
-        left: 37%;
-        top: 745%;
+        left: 45%;
+        top: 810%;
         gap: 1rem;
     }
     form {
         left: 32%;
-        top: 375%;
+        top: 468%;
     }
     .container.contact_container {
         width: var(--container-width-1);

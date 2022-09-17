@@ -70,42 +70,86 @@
     position: relative;
     top: 3%;
 }
-    
 
-/* For tablets */
-@media screen and (max-width: 1024px) {
-    .portfolio_container {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.8rem;
+/* for Macs */
+@media screen and (max-width: 2000px) {
+    .portfolio_container  {
         position: relative;
-        top: -2%;
-    }
-    .portfolio_item {
-        position: relative;
-        left: -32%;
+        top: -8%;
     }
     .portfolio_top {
         position: relative;
         top: 1%;
         line-height: 50px;
     }
+    
+}
+
+/* For Small monitor */
+@media screen and (max-width: 1200px) {
+    .portfolio_top {
+        top: 2%;
+        left: 3%;
+        line-height: 50px;
+    }
+    .portfolio_container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.8rem;
+        position: relative;
+        top: -6%;
+    }
+    .portfolio_item {
+        position: relative;
+        left: -6%;
+    }
+}
+    
+
+/* For tablets */
+@media screen and (max-width: 1024px) {
+    .portfolio_container {
+        position: relative;
+        top: 5%;
+        gap: 170px;
+    }
+    .portfolio_top {
+        position: relative;
+        top: 5%;
+        left: 13%;
+    }
+    .portfolio_item {
+        position: relative;
+        left: -98%;
+        width: 155%;
+        height: 90vh;
+    }
+    .portfolio_item h3 {
+        font-size: 40px;
+    }
+    .portfolio_item h4 {
+        font-size: 23px;
+    }
+    .portfolio_item h5 {
+        font-size: 20px;
+    }
 }
 /* For mobile phones */
 @media screen and (max-width: 600px) {
     .portfolio_container {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 5rem;
         position: relative;
-        top: 33%;
+        top: 110%;
     }
     .portfolio_item {
         position: relative;
-        left: 0;
-        width: 130%;
+        left: -9%;
+        width: 200%;
+        height: 105%;
     }
     .portfolio_top {
         position: relative;
-        top: 42%;
-        left: 5%;
+        top: 115%;
+        left: 28%;
     }
 }
