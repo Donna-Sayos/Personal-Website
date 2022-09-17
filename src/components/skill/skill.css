@@ -87,7 +87,7 @@
     .skill_container {
         grid-template-columns: 1fr;
         position: relative;
-        top: 39%;
+        top: 45%;
         gap: 10px;
     }
     .skill_container > div {
@@ -100,12 +100,12 @@
     }
     .sub2 {
         position: relative;
-        top: 31%;
+        top: 38%;
         left: 3%;
     }
     .sub2_ {
         position: relative;
-        top: 28%;
+        top: 35%;
         left: 3%;
     }
 }

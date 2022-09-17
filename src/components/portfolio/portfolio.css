@@ -96,15 +96,16 @@
         grid-template-columns: 1fr;
         gap: 1rem;
         position: relative;
-        top: 25%;
+        top: 33%;
     }
     .portfolio_item {
         position: relative;
-        left: -5%;
+        left: 0;
         width: 130%;
     }
     .portfolio_top {
         position: relative;
-        top: 28%;
+        top: 42%;
+        left: 5%;
     }
 }

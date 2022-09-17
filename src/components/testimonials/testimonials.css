@@ -82,8 +82,8 @@
     .container.testimonials_container {
         width: var(--container-width-1);
         position: relative;
-        top: 214%;
-        left: 1%;
+        top: 244%;
+        left: 3%;
     }
     .testimonial h2 {
         font-size: 1.8rem;
@@ -95,7 +95,8 @@
     }
     .top {
         position: relative;
-        top: 216%;
+        top: 246%;
+        left: 6%;
         line-height: 40px;
     }
 }
