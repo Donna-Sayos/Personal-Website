@@ -27,7 +27,7 @@ const Contact = () => {
       <div className="contact_top">
         <h3 className="sub5">Get In Touch</h3>
         <h2 className="sub5_">Contact Me. Don't be shy 😊</h2>
-        <medium>( Please provide a valid email 👍🏼 )</medium>
+        <h2>( Please provide a valid email 👍🏼 )</h2>
       </div>
 
       <div className="container contact_container">

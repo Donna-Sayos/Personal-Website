@@ -1,17 +1,17 @@
 .container.contact_container {
     width: 60%;
     display: grid;
-    grid-template-columns: 40% 80%;
+    grid-template-rows: 40% 80%;
     gap: 12%;
     position: relative;
-    top: 10%;
-    left: -10%;
+    top: 8%;
 }
 
 .contact_options {
     display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
 }
 
 .contact_option {
@@ -66,7 +66,9 @@
 form {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 0.5rem;
+    position: relative;
+    top: -10%;
 }
 
 button {
@@ -91,17 +93,19 @@ input, textarea {
 @media screen and (max-width: 1024px) {
     .container.contact_container {
         grid-template-columns: 1fr;
+        grid-template-rows: 30% 60%
     }
     .contact_options {
         flex-direction: row;
         position: relative;
-        left: 18%;
-        top: -40%;
-    }
+        left: 8%;
+        top: -20%;
+        gap: 2rem;
+    }   
     form {
         position: relative;
-        top: -25%;
-        left: 18%;
+        top: -20%;
+        left: 8%;
         gap: 0.5rem;
     }
     .contact_top {
@@ -120,15 +124,22 @@ input, textarea {
     .contact_options {
         flex-direction: column;
         left: 35.5%;
-        top: 410%;
+        top: 670%;
+        gap: 1rem;
     }
     form {
         left: 28.5%;
-        top: 345%;
+        top: 335%;
     }
     .container.contact_container {
         width: var(--container-width-1);
         position: relative;
         left: -20%;
+    }
+    .contact_option {
+        backdrop-filter: blur(0);
+    }
+    .contact_option h4 {
+        font-size: 25px;
     }
 }

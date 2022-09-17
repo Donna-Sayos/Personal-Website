@@ -34,7 +34,7 @@ const Testimonials = () => {
               <div className="name_social">
                 <h2>{name}</h2>
                 <a href={link} target="_blank" rel="noreferrer">
-                    <IoLogoLinkedin size={30} color="#0089CC" />
+                    <IoLogoLinkedin size={30} color="#0089CC" className="icon"/>
                 </a>
               </div>
               <p>{feedback}</p>

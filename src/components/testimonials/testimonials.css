@@ -23,6 +23,15 @@
     gap: 1rem;
 }
 
+.icon {
+    transition: var(--transition);
+}
+
+.icon:hover {
+    transform: translateY(-50px);
+    transform: translate(-20px, -40px) rotate(-10deg) scale(2);
+}
+
 .testimonial {
     text-align: center;
     font-size: 1.6rem;
