@@ -1,4 +1,4 @@
-.experience_container {
+.skill_container {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
@@ -6,7 +6,7 @@
     top: 8%;
 }
 
-.experience_container > div {
+.skill_container > div {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(2px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -18,24 +18,24 @@
     transition: var(--transition);
 }
 
-.experience_container > div:hover {
+.skill_container > div:hover {
     transform: scale(1.1);
     cursor: default;
 }
 
-.experience_container > div h2 {
+.skill_container > div h2 {
     text-align: center;
     margin-bottom: 1rem;
     color: #5A7D57;
 }
 
-.experience_content {
+.skill_content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
 }
 
-.experience_details {
+.skill_details {
     display: flex;
     gap: 1rem;
 }
@@ -60,12 +60,12 @@
 
 /* For tablets */
 @media screen and (max-width: 1024px) {
-    .experience_container {
+    .skill_container {
         grid-template-columns: 1fr;
         position: relative;
         top: 24%;
     }
-    .experience_container > div {
+    .skill_container > div {
         width: 75%;
         padding: 2rem;
         margin: 0 auto;
@@ -84,13 +84,13 @@
 }
 /* For mobile phones */
 @media screen and (max-width: 600px) {
-    .experience_container {
+    .skill_container {
         grid-template-columns: 1fr;
         position: relative;
         top: 39%;
         gap: 10px;
     }
-    .experience_container > div {
+    .skill_container > div {
         width: 114%;
         padding: 0.6rem;
         margin: 0 auto;
