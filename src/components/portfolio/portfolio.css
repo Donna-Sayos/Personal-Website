@@ -139,7 +139,7 @@
         grid-template-columns: 1fr;
         gap: 6rem;
         position: relative;
-        top: 113%;
+        top: 138%;
     }
     .portfolio_item {
         position: relative;
@@ -149,7 +149,7 @@
     }
     .portfolio_top {
         position: relative;
-        top: 123%;
+        top: 150%;
         left: 28%;
     }
 }
