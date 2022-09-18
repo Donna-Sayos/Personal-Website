@@ -11,14 +11,14 @@ import Footer from "./components/footer/Footer";
 const App = () => {
   return (
     <>
-        <Header />
-        <Nav />
-        <About />
-        <Skill />
-        <Portfolio />
-        <Testimonials />
-        <Contact />
-        <Footer />
+      <Header />
+      <Nav />
+      <About />
+      <Skill />
+      <Portfolio />
+      <Testimonials />
+      <Contact />
+      <Footer />
     </>
   )
 };

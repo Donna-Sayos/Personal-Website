@@ -164,19 +164,19 @@ input, textarea {
         font-size: 2.5rem;
     }
     .contact_top {
-        top: 425%;
+        top: 497%;
         left: 25%;
         text-align: center;
     }
     .contact_options {
         flex-direction: column;
         left: 45%;
-        top: 810%;
+        top: 818%;
         gap: 1rem;
     }
     form {
         left: 32%;
-        top: 468%;
+        top: 470%;
     }
     .container.contact_container {
         width: var(--container-width-1);

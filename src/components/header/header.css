@@ -143,4 +143,7 @@ header {
         position: relative;
         left: calc(50% - 11rem);
     }
+    .header_top {
+        left: 7%;
+    }
 }

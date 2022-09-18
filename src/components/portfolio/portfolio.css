@@ -137,9 +137,9 @@
 @media screen and (max-width: 600px) {
     .portfolio_container {
         grid-template-columns: 1fr;
-        gap: 5rem;
+        gap: 6rem;
         position: relative;
-        top: 110%;
+        top: 113%;
     }
     .portfolio_item {
         position: relative;
@@ -149,7 +149,7 @@
     }
     .portfolio_top {
         position: relative;
-        top: 115%;
+        top: 123%;
         left: 28%;
     }
 }
