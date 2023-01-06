@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import "./contact.css"; 
 import { MdEmail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [message, setMessage] = useState(false);
@@ -40,7 +40,7 @@ const Contact = () => {
           </article>
           <article className="contact_option">
             <FiPhoneCall size={30} color="#FFB08F" />
-            <h2>Phonecall</h2>
+            <h2>Phone number</h2>
             <h4>1 (929) 256 - 8198</h4>
             <a href="tel:+19292568198" target="_blank" rel="noreferrer" className="btn">Call Me</a>
           </article>
@@ -49,7 +49,7 @@ const Contact = () => {
         {/* message formRef */}
         <form ref={formRef} onSubmit={handleSubmit}>
           <input type="text" name="name" placeholder="Your Full Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="email" name="email" placeholder="Your Email" required minLength={4} />
           <textarea name="message" rows={12} placeholder="Your Message" required></textarea>
           <button type="submit" className="btn btn-primary">Send</button>
           {message && <h2>Thanks, I'll reply as soon as I can 😁</h2>}
