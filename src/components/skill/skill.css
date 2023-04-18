@@ -3,7 +3,7 @@
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
     position: relative;
-    top: 8%;
+    top: 5%;
 }
 
 .skill_container > div {

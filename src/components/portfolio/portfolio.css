@@ -16,7 +16,7 @@
     border: 1px solid transparent;
     transition: var(--transition);
     position: relative;
-    top: 7%;
+    top: 15%;
 }
 
 .portfolio_item:hover {
